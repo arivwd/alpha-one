@@ -2,7 +2,7 @@ Ext.define('AlphaOne.Application', {
 	extend: 'Ext.app.Application',
 	name: 'AlphaOne',
 	requires: ['AlphaOne.*'],
-	defaultToken: 'homeview',
+	defaultToken: 'pleaselogin',
 
 	removeSplash: function () {
 		Ext.getBody().removeCls('launching')
@@ -12,12 +12,12 @@ Ext.define('AlphaOne.Application', {
 
 	launch: function () {
 		this.removeSplash()
-		var whichView = 'mainview'
+		var whichView = 'mainloginview'
 		Ext.Viewport.add([{xtype: whichView}])
 	},
 
 	onAppUpdate: function () {
-		Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
+		Ext.Msg.confirm('Pembaruan Aplikasi', 'Aplikasi ini sudah diperbarui, apakah Anda ingin me-reload Aplikasi ?',
 			function (choice) {
 				if (choice === 'yes') {
 					window.location.reload();

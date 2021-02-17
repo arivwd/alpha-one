@@ -2,8 +2,6 @@ Ext.define('AlphaOne.view.main.MainViewController', {
 	extend: 'Ext.app.ViewController',
 	alias: 'controller.mainviewcontroller',
 
-
-
 	routes: { 
 		':xtype': {action: 'mainRoute'}
 	},
