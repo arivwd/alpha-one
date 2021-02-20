@@ -7,6 +7,6 @@ Ext.define('AlphaOne.view.login.MainLoginView', {
     layout: 'center',
 
     items: [
-        { xtype: 'pleaselogin', bodyBorder: true, border: true, style: 'border: 1px solid #999' },
+        { xtype: 'loginview', bodyBorder: true, border: true, style: 'border: 1px solid #999' },
     ]
 });

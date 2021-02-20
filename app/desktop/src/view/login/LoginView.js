@@ -1,6 +1,6 @@
 Ext.define('AlphaOne.view.login.LoginView', {
     extend: 'Ext.form.Panel',
-    xtype: 'pleaselogin',
+    xtype: 'loginview',
     controller: 'loginviewcontroller',
     viewModel: {
         type: 'loginviewmodel'
