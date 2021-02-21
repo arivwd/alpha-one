@@ -1,7 +1,9 @@
 Ext.define('AlphaOne.view.main.nav.NavViewController', {
+	//############################ INITILIZATION ############################//
 	extend: "Ext.app.ViewController",
 	alias: "controller.navviewcontroller",
 
+	//############################ METHODS ############################//
 	initViewModel: function(vm) {},
 
 	onTopViewNavToggle: function () {
@@ -15,4 +17,5 @@ Ext.define('AlphaOne.view.main.nav.NavViewController', {
 		}
 		this.fireViewEvent("select", node);
 	}
+	
 });

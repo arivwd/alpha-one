@@ -1,8 +1,12 @@
 Ext.define('AlphaOne.view.main.header.HeaderView', {
+    //############################ INITILIZATION ############################//
     extend: 'Ext.Toolbar',
     xtype: 'headerview',
+    
+    //############################ PROPERTIES ############################//
     cls: 'headerview',
-    viewModel: {},
+    
+    //############################ COMPONENTS ############################//
     items: [
         { 
             xtype: 'container',
@@ -18,4 +22,5 @@ Ext.define('AlphaOne.view.main.header.HeaderView', {
             iconCls: 'x-fa fa-arrow-left'
         }
     ]
+    
 });

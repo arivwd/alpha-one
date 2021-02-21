@@ -1,11 +1,16 @@
 Ext.define('AlphaOne.view.main.nav.NavView', {
+    //############################ INITILIZATION ############################//
     extend: 'Ext.Panel',
     xtype: 'navview',
     controller: "navviewcontroller",
+
+    //############################ PROPERTIES ############################//
     cls: 'navview',
-    viewModel: {},
     layout: 'fit',
+
+    //############################ COMPONENTS ############################//
     tbar: {xtype: 'topview', height: 50},
+
     items: [ 
         {
             xtype: 'menuview', 
@@ -16,5 +21,7 @@ Ext.define('AlphaOne.view.main.nav.NavView', {
             }
         }
     ],
+
     bbar: {xtype: 'bottomview', bind: {height: '{bottomview_height}'}}
+    
 });

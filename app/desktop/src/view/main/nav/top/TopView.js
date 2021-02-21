@@ -1,9 +1,13 @@
 Ext.define('AlphaOne.view.main.nav.top.TopView', {
+    //############################ INITILIZATION ############################//
     extend: 'Ext.Toolbar',
     xtype: 'topview',
+
+    //############################ PROPERTIES ############################//
     cls: 'topview',
-    viewModel: {},
     shadow: false,
+
+    //############################ COMPONENTS ############################//
     items: [
         {
             xtype: 'container', 

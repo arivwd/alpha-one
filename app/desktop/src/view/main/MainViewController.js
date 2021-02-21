@@ -1,11 +1,12 @@
 Ext.define('AlphaOne.view.main.MainViewController', {
+	//############################ INITILIZATION ############################//
 	extend: 'Ext.app.ViewController',
 	alias: 'controller.mainviewcontroller',
-
 	routes: { 
 		':xtype': {action: 'mainRoute'}
 	},
 
+	//############################ METHODS ############################//
 	mainRoute:function(xtype) {
 		//var menuview = this.lookup('menuview');
 		var navview = this.lookup('navview');
@@ -60,7 +61,6 @@ Ext.define('AlphaOne.view.main.MainViewController', {
 		this.getView().destroy();
 		Ext.Viewport.add([{ xtype: 'loginview'}]);
 	},
-
 
 //	onActionsViewLogoutTap: function( ) {
 //		var vm = this.getViewModel();

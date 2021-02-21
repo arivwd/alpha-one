@@ -1,6 +1,9 @@
 Ext.define('AlphaOne.view.main.MainViewModel', {
+	//############################ INITILIZATION ############################//
 	extend: 'Ext.app.ViewModel',
 	alias: 'viewmodel.mainviewmodel',
+
+	//############################ PROPERTIES ############################//
 	data: {
 		name: 'AlphaOne',
 		navCollapsed:       false,
@@ -14,7 +17,6 @@ Ext.define('AlphaOne.view.main.MainViewModel', {
 		detailview_width:      10,
 		detailview_max_width: 300,
 		detailview_min_width:   0,
-
 	},
 	formulas: {
 		navview_width: function(get) {
@@ -33,9 +35,9 @@ Ext.define('AlphaOne.view.main.MainViewModel', {
           			{ "text": "Home", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
 					{ "text": "Personnel", "iconCls": "x-fa fa-table", "xtype": "personnelview","leaf": true },
 					//add new items on the next line (from sencha-node generate viewpackage)
-
 				]
 			}
 		}
 	}
+
 });

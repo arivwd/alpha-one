@@ -1,4 +1,5 @@
 Ext.define('AlphaOne.view.login.LoginView', {
+    //############################ INITILIZATION ############################//
     extend: 'Ext.form.Panel',
     xtype: 'loginview',
     controller: 'loginviewcontroller',
@@ -9,11 +10,13 @@ Ext.define('AlphaOne.view.login.LoginView', {
         'Ext.field.Password'
     ],
 
+    //############################ PROPERTIES ############################//
     title: 'AlphaOne',
     bodyPadding: 10,
     width: 400,
     autoSize: true,
     
+    //############################ COMPONENTS ############################//
     items: [{
         xtype: 'textfield',
         allowBlank: false,
@@ -38,4 +41,5 @@ Ext.define('AlphaOne.view.login.LoginView', {
         text: 'Mulai',
         handler: 'onLogin'
     }]
+
 });

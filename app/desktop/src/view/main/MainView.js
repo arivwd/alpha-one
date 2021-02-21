@@ -1,4 +1,5 @@
 Ext.define('AlphaOne.view.main.MainView', {
+    //############################ INITILIZATION ############################//
     extend: 'Ext.Container',
     xtype: 'mainview',
     controller: 'mainviewcontroller',
@@ -8,7 +9,11 @@ Ext.define('AlphaOne.view.main.MainView', {
     requires: [
     'Ext.layout.Fit'
     ],
+    
+    //############################ PROPERTIES ############################//
     layout: 'fit',
+
+    //############################ COMPONENTS ############################//
     items: [
         { xtype: 'navview',    reference: 'navview',    docked: 'left',   bind: {width:  '{navview_width}'}, listeners: { select: "onMenuViewSelectionChange"} },
         { xtype: 'headerview', reference: 'headerview', docked: 'top',    bind: {height: '{headerview_height}'} },
@@ -16,4 +21,5 @@ Ext.define('AlphaOne.view.main.MainView', {
         { xtype: 'centerview', reference: 'centerview' },
         { xtype: 'detailview', reference: 'detailview', docked: 'right',  bind: {width:  '{detailview_width}'}  },
     ]
+    
 });

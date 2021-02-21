@@ -1,11 +1,13 @@
 Ext.define('AlphaOne.view.nav.menu.MenuView', {
+    //############################ INITILIZATION ############################//
     extend: 'Ext.list.Tree',
     xtype: 'menuview',
-    viewModel: {},
-    ui: 'nav',
     requires: [
         'Ext.data.TreeStore',
     ],
+    
+    //############################ PROPERTIES ############################//
+    ui: 'nav',
     scrollable: true,
     bind: { 
         store: '{menu}', 
@@ -13,4 +15,5 @@ Ext.define('AlphaOne.view.nav.menu.MenuView', {
     },
     expanderFirst: false,
     expanderOnly: false
+
 });
