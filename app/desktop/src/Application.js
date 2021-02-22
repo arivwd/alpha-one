@@ -1,5 +1,5 @@
 Ext.define('AlphaOne.Application', {
-	//############################ INITILIZATION ############################//
+	//############################ INSTANTIATION ############################//
 	extend: 'Ext.app.Application',
 	requires: ['AlphaOne.*'],
 	
@@ -18,6 +18,8 @@ Ext.define('AlphaOne.Application', {
 		var whichView = 'mainloginview'
 		Ext.Viewport.add([{xtype: whichView}])
 	},
+
+	//############################ LISTENERS ############################//
 	onAppUpdate: function () {
 		Ext.Msg.confirm('Pembaruan Aplikasi', 'Aplikasi ini sudah diperbarui, apakah Anda ingin me-reload Aplikasi ?',
 			function (choice) {
