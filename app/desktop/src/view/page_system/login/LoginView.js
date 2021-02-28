@@ -9,7 +9,7 @@ Ext.define('AlphaOne.view.page_system.login.LoginView', {
     ],
 
     //############################ PROPERTIES ############################//
-    title: 'AlphaOne',
+    title: 'AlphaOne &trade;',
     bodyPadding: 10,
     width: 400,
     autoSize: true,
