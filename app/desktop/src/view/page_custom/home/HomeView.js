@@ -19,8 +19,6 @@ Ext.define('AlphaOne.view.page_custom.home.HomeView',{
 		<br>
 		- left-side collapsable menu with custom area on top of menu
 		<br>
-		- right-side (optional) detail view
-		<br>
 		- Single Page Application (spa) routing (note # in URL)
 		<br>
 		- Each View (menu) isolated into its own folder (under the 'view' folder)

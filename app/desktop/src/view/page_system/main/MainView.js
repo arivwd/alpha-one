@@ -18,7 +18,6 @@ Ext.define('AlphaOne.view.page_system.main.MainView', {
         { xtype: 'headerview', reference: 'headerview', docked: 'top',    bind: {height: '{headerview_height}'} },
         { xtype: 'footerview', reference: 'footerview', docked: 'bottom', bind: {height: '{footerview_height}'} },
         { xtype: 'centerview', reference: 'centerview' },
-        { xtype: 'detailview', reference: 'detailview', docked: 'right',  bind: {width:  '{detailview_width}'}  },
     ]
     
 });

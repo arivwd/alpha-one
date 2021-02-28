@@ -44,16 +44,6 @@ Ext.define('AlphaOne.view.page_system.main.MainViewController', {
 		var vm = this.getViewModel();
 		vm.set('navCollapsed', !vm.get('navCollapsed'));
 	},
-	onHeaderViewDetailToggle: function (button) {
-		var vm = this.getViewModel();
-		vm.set('detailCollapsed', !vm.get('detailCollapsed'));
-		if(vm.get('detailCollapsed')===true) {
-			button.setIconCls('x-fa fa-arrow-left');
-		}
-		else {
-			button.setIconCls('x-fa fa-arrow-right');
-		}
-	},
 	onBottomViewlogout: function () {
 		localStorage.setItem("LoggedIn", false);
 		this.getView().destroy();
