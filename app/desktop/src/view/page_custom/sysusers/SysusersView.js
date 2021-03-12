@@ -1,11 +1,14 @@
-Ext.define('AlphaOne.view.page_custom.personnel.PersonnelView',{
+Ext.define('AlphaOne.view.page_custom.sysusers.SysusersView',{
+    //############################ INSTANTIATION ############################//
     extend: 'Ext.grid.Grid',
-    xtype: 'personnelview',
-    cls: 'personnelview',
+    xtype: 'sysusersview',
     requires: ['Ext.grid.rowedit.Plugin'],
-    controller: {type: 'personnelviewcontroller'},
-    viewModel: {type: 'personnelviewmodel'},
-    store: {type: 'personnelviewstore'},
+    controller: {type: 'sysusersviewcontroller'},
+    viewModel: {type: 'sysusersviewmodel'},
+    store: {type: 'sysusersviewstore'},
+
+    //############################ PROPERTIES ############################//
+    cls: 'sysusersview',
     grouped: true,
     groupFooter: {
         xtype: 'gridsummaryrow'
@@ -15,6 +18,8 @@ Ext.define('AlphaOne.view.page_custom.personnel.PersonnelView',{
             autoConfirm: false
         }
     },
+
+    //############################ COMPONENTS ############################//
     columns: [
         {
             text: 'Name',
@@ -31,6 +36,8 @@ Ext.define('AlphaOne.view.page_custom.personnel.PersonnelView',{
             width: 150
         }
     ],
+
+    //############################ LISTENERS ############################//
     listeners: {
         canceledit: 'onEditCancelled'
     }
