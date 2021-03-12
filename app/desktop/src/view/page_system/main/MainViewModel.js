@@ -27,7 +27,21 @@ Ext.define('AlphaOne.view.page_system.main.MainViewModel', {
 				"expanded": true,
 				"children": [
           			{ "text": "Home", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
-					{ "text": "Users", "iconCls": "x-fa fa-table", "xtype": "sysusersview","leaf": true },
+					{ 
+						"text": "Setting", 
+						"iconCls": "x-fa fa-table", 
+						children: [{
+							"text": "Users",
+							"leaf": true,
+							"xtype": "sysusersview"
+						},{
+							"text": "Roles",
+							"leaf": true
+						},{
+							"text": "Variables",
+							"leaf": true
+						}],
+					},
 					//add new items on the next line (from sencha-node generate viewpackage)
 				]
 			}
