@@ -1,4 +1,4 @@
-Ext.define('AlphaOne.view.page_system.main.MainViewModel', {
+Ext.define('AlphaOne.model.page_system.main.MainViewModel', {
 	//############################ INSTANTIATION ############################//
 	extend: 'Ext.app.ViewModel',
 	alias: 'viewmodel.mainviewmodel',
