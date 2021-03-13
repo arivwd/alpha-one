@@ -10,7 +10,6 @@ Ext.define('AlphaOne.view.main.nav.NavView', {
 
     //############################ COMPONENTS ############################//
     tbar: {xtype: 'topview', bind: {height: '{topview_height}'}},
-
     items: [ 
         {
             xtype: 'menuview', 
@@ -21,7 +20,6 @@ Ext.define('AlphaOne.view.main.nav.NavView', {
             }
         }
     ],
-
-    bbar: {xtype: 'bottomview', bind: {height: '{bottomview_height}'}}
+    bbar: {xtype: 'bottomview', bind: {height: '{bottomview_height}'}},
     
 });

@@ -12,7 +12,6 @@ Ext.define('AlphaOne.view.main.nav.NavViewController', {
 		vm.set('navCollapsed', !vm.get('navCollapsed'));
 	},
 	onMenuViewSelectionChange: function(tree, node) {
-		console.log('Di klik!');
 		if (!node) {
 				return;
 		}
