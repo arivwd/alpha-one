@@ -13,7 +13,7 @@ Ext.define('AlphaOne.view.page_system.main.main_nav.top.TopView', {
             xtype: 'container', 
             cls: 'topviewtext',
             bind: { 
-                html: '{name} &trade;',
+                html: '<STRONG>{name} &trade;</STRONG>',
                 hidden: '{navCollapsed}' 
             }
         },
