@@ -32,6 +32,7 @@ Ext.define('AlphaOne.model.page_system.main.MainViewModel', {
 						"iconCls": "x-fa fa-table", 
 						children: [{
 							"text": "Users",
+							"iconCls": "x-fa fa-users",
 							"leaf": true,
 							"xtype": "sysusersview"
 						},{

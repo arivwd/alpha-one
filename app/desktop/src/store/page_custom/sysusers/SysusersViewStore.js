@@ -1,4 +1,4 @@
-Ext.define('AlphaOne.view.page_custom.sysusers.SysusersViewStore', {
+Ext.define('AlphaOne.store.page_custom.sysusers.SysusersViewStore', {
     //############################ INSTANTIATION ############################//
     extend: 'Ext.data.Store',
     alias: 'store.sysusersviewstore',
