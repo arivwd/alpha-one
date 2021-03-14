@@ -13,6 +13,10 @@ Ext.define('AlphaOne.view.page_system.main.MainViewController', {
 		var footerview = this.lookup('footerview');
 		var centerview = this.lookup('centerview');
 
+		//TODO: Widget toolbarlistview belum terdeteksi
+		var toolbarlistview = this.lookup('toolbarlistview');
+		//console.log(toolbarlistview);
+
 		//var menuview = this.lookup('menuview');
 		var menuview = navview.items.items[0];
 
@@ -27,7 +31,7 @@ Ext.define('AlphaOne.view.page_system.main.MainViewController', {
 			return;
 		}
 
-		// Harus ditambahkan Tab baru on-the-fly di centerview
+		//TODO: Harus ditambahkan Tab baru on-the-fly di centerview
 		if (!centerview.getComponent(xtype)) {
 			centerview.add({ 
 				'xtype': xtype,  

@@ -1,4 +1,4 @@
-Ext.define('AlphaOne.view.page_system.login.MainLoginView', {
+Ext.define('AlphaOne.view.page_system.main.MainLoginView', {
     //############################ INSTANTIATION ############################//
     extend: 'Ext.Container',
     xtype: 'mainloginview',

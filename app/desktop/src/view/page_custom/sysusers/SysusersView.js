@@ -2,7 +2,10 @@ Ext.define('AlphaOne.view.page_custom.sysusers.SysusersView',{
     //############################ INSTANTIATION ############################//
     extend: 'Ext.grid.Grid',
     xtype: 'sysusersview',
-    requires: ['Ext.grid.rowedit.Plugin'],
+    requires: [
+        'Ext.grid.rowedit.Plugin',
+        'Ext.grid.column.RowNumberer'
+    ],
     controller: {type: 'sysusersviewcontroller'},
     viewModel: {type: 'sysusersviewmodel'},
     store: {type: 'sysusersviewstore'},
@@ -20,7 +23,13 @@ Ext.define('AlphaOne.view.page_custom.sysusers.SysusersView',{
     },
 
     //############################ COMPONENTS ############################//
+    dockedItems: [{
+        dock: 'top',
+        xtype: 'toolbarlistview',
+        height: 30
+    }],
     columns: [
+        {xtype: 'rownumberer'},
         {
             text: 'Name',
             dataIndex: 'name',
