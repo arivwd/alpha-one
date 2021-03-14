@@ -1,4 +1,4 @@
-Ext.define('AlphaOne.view.main.nav.NavView', {
+Ext.define('AlphaOne.view.page_system.main.main_nav.NavView', {
     //############################ INSTANTIATION ############################//
     extend: 'Ext.Panel',
     xtype: 'navview',

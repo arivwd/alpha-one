@@ -14,8 +14,8 @@ Ext.define('AlphaOne.view.page_system.main.MainViewController', {
 		var centerview = this.lookup('centerview');
 
 		//TODO: Widget toolbarlistview belum terdeteksi
-		var toolbarlistview = this.lookup('toolbarlistview');
-		//console.log(toolbarlistview);
+		var toptoolbargridview = this.lookup('toptoolbargridview');
+		console.log(toptoolbargridview);
 
 		//var menuview = this.lookup('menuview');
 		var menuview = navview.items.items[0];

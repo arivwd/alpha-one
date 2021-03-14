@@ -1,4 +1,4 @@
-Ext.define('AlphaOne.view.main.nav.NavViewController', {
+Ext.define('AlphaOne.view.page_system.main.main_nav.NavViewController', {
 	//############################ INSTANTIATION ############################//
 	extend: "Ext.app.ViewController",
 	alias: "controller.navviewcontroller",

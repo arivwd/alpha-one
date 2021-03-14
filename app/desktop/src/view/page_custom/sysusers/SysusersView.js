@@ -23,11 +23,6 @@ Ext.define('AlphaOne.view.page_custom.sysusers.SysusersView',{
     },
 
     //############################ COMPONENTS ############################//
-    dockedItems: [{
-        dock: 'top',
-        xtype: 'toolbarlistview',
-        height: 30
-    }],
     columns: [
         {xtype: 'rownumberer'},
         {
